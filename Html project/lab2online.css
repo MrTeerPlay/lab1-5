@@ -1,0 +1,250 @@
+/* стиль тексту, що збільшити текст списку (з спробами зробити прозрачним текст на інший беграунт) */
+
+.text {
+    margin-top: 180px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-blend-mode: screen;
+}
+
+
+/* таблиця */
+
+.border {
+    font-size: 30px;
+    background-blend-mode: screen;
+}
+
+
+/* Основа всього, що знаходиться в тілі */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+
+/* "контейнер", а бо ж "площадка" для тексту, щоб було гарно */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* трохи правки для тексту з велечиною */
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+/* трохи правок в тексті з абзацами */
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* підсвідка деякої чатини тексту (щоб було удобно в майбутньому) */
+
+.highlight {
+    color: #3498db;
+    font-weight: bold;
+}
+
+
+/* Інформація про мене (контакти) */
+
+.contact-info {
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* це підчастина стилізування тексту та всього іншого в контактній інфі про мене */
+
+.contact-info h3 {
+    color: #333;
+}
+
+
+/* це підчастина стилізування тексту та всього іншого в контактній інфі про мене */
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* це підчастина стилізування тексту та всього іншого в контактній інфі про мене */
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Основа всього, що знаходиться в html і тілі (щоб краще було видно та для роботи з беграундами) */
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* для всього (своєрідна оптимізація від старших по розуму (з ютуба короче взяв це, щоб працювале все інше як треба) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* нижній зміст підказок та інформації */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* верхня частина серед колонтитулів */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 8px 12px black;
+}
+
+
+/* ВСЕ що там нижще (до наступного коментаря) є підтипом стилю від header для створення допоміжної менюшки в переміщенні на сайті (легшого переміщеннч) */
+
+header .logo {
+    font-size: 20px;
+    font-weight: 20px;
+    color: black;
+    transition: .5s;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background: black;
+    color: #fff;
+}
+
+header nav ul li a:active {
+    background-color: darkcyan;
+}
+
+
+/* це все ще хедерське, але це вже для випадаючих підсказок з підказок */
+
+
+/*(зроблено ще до початку роботи над 3-тьою лабораторною роботою)*/
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+
+nav ul li:hover>ul {
+    display: initial;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+
+
+/* Робить жернішим текст та чорним, коли наводиш на нього */
+
+span:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.container_two {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+/* Бокова колонка */
+
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Основний вміст */
+
+.main-content {
+    flex: 3;
+    background-image: url(https://img.freepik.com/free-vector/gradient-hexagonal-background_79603-1629.jpg?t=st=1730841947~exp=1730845547~hmac=fd492ceef6d38aaf8d13bcd3132f7b3bf994af8e833657c2d34e0f5c3eec155f&w=1380);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1350px
+}

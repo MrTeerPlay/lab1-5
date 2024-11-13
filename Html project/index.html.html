@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<!-- головне ТЛО (назва вкладки і деякі приколи)-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб.№2_Web-сторінки</title>
+    <link rel="stylesheet" href="lab2online.css">
+</head>
+
+<body>
+    <!-- Беграунт сторінки-->
+    <style>
+        body {
+            background-image: url(https://images.wallpaperscraft.ru/image/single/zakat_more_pliazh_155903_3840x2160.jpg);
+            background-position: center;
+        }
+    </style>
+
+    <!-- Верхній колонтитул -->
+    <!-- головний меню-помічник -->
+    <header>
+
+        <a href="#" class="logo"> logo </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#Aboutme">About me</a>
+                    <ul>
+                        <li><a href="#">а</a></li>
+                        <li><a href="#">а</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" id="Store">Store</a></li>
+                <li><a href="#About_contacts">Contacts</a>
+                    <ul>
+                        <li><a href="#">Номер телефона:</a></li>
+                        <li><a href="#">Емейл:</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Account</a></li>
+                <li><a href="#">PointShop</a></li>
+                <li><a href="#">How it works</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Бокова колона -->
+    <div class="container_two">
+        <div class="sidebar">
+            <h2>Бокова колонка</h2>
+            <p>Це текст у боковій колонці.</p>
+        </div>
+
+        <!-- Основний зміст сторінки -->
+        <div class="main-content">
+
+            <!-- Списочок -->
+            <div class="text">
+                <ul>
+                    <li>Кофта</li>
+                    <p></p>
+                    <li>Штани</li>
+                    <p></p>
+                    <li>Кепка</li>
+                    <p></p>
+                    <li>Кросівки</li>
+                    <p></p>
+                </ul>
+            </div>
+
+            <!-- Табличечка (таблиця) -->
+            <div class="border">
+                <table border="1">
+                    <tr>
+                        <td>Штани</td>
+                        <td>Кофта</td>
+                        <td>Кепка</td>
+                        <td>Кросівки</td>
+                    </tr>
+
+                    <!--ціна кожного елементу одежі-->
+                    <tr>
+                        <td>700</td>
+                        <td>500</td>
+                        <td>200</td>
+                        <td>1000</td>
+                    </tr>
+            </div>
+
+            <!--повна сумма речей-->
+            <table border="1">
+                <tr>
+                    <td>Сумма: 2400</td>
+                </tr>
+            </table>
+
+            <!-- Картинка базару -->
+            <img src="https://arlekin.ua/images/.t/.w400_85_1582864992_20191029_arlekinua_1504044942111242.jpg">
+            <p></p>
+
+            <!-- Відео того, як виглядає базар -->
+            <iframe width="800" height="367" src="https://www.youtube.com/embed/8wK-K1tIl2A?si=VAvp3T1vf9be9qAf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p></p>
+
+            <!--Перелік інформації про мене і т.д.-->
+
+            <section id='Aboutme' class="About_me">
+                <div class="container">
+                    <!-- Про мене -->
+                    <h1>Про мене</h1>
+                    <p>
+                        Мене звати <span class="highlight">Ткач Андрій Олександрович</span>, я — <span class="highlight">майбутній Тоні-Старк (але тільки на базарі)</span> Я спеціалізуюсь на створенні якісних та сучасних рішень для своїх клієнтів, завжди
+                        ставлючи на перше місце інновації та увагу до деталей.
+                    </p>
+
+                    <p>
+                        Нині я вчусь у <span class="highlight">ВНТУ</span>. Я захоплююсь <span class="highlight">вивченням програмування,</span><span class="highlight"> створення сайтових приколів</span><span class="highlight"> та іншими чудовими способами</span>
+                        <span class="highlight"> розкривати повний потенціал комп'ютера</span>, але хоч я тільки поступив та не маю повного розуміння картини, я вірю, що коли дороблю ці завдання й зможу відкрити очі на цей прекрасний світ технологій!
+                    </p>
+            </section>
+            <section id='About_contacts' class="About_contacts">
+                <div class="contact-info">
+                    <!-- контактна інформація -->
+                    <h3>Контактна інформація:</h3>
+                    <ul>
+                        <li><strong>Email:</strong> andriyvin08@gmail.com</li>
+                        <li><strong>Телефон:</strong> +380 XX XXX XXXX</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Нижній колонтитул-->
+        <footer>
+            <p>Нижній колонтитул © 2024</p>
+        </footer>
+        <!--Скрипт-->
+        <script src="script.js"></script>
+</body>
+
+<!--THE END-->
+<!--(кінець)-->
+
+</html>

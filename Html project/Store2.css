@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    /* Щоб він залишався на місці */
+    width: 100px;
+    /* Ширина колонтитула */
+    height: 50px;
+    /* Висота колонтитула */
+    background-color: #8c948c7a;
+    /* Колір фону */
+    color: rgb(0, 0, 0);
+    /* Колір тексту */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Тінь */
+    display: flex;
+    /* Додаємо ще стилі для тексту */
+    align-items: center;
+    /* Центруємо текст по вертикалі */
+    justify-content: center;
+    /* Центруємо текст по горизонталі */
+    font-size: 50px;
+    /* Розмір шрифту */
+}
+
+.header.shrink {
+    transform: scale(0.8);
+    transition: transform 0.2s;
+}
